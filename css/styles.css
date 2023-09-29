@@ -478,3 +478,9 @@ img {
 .social-link-f:focus {
   background-color: #31d0aa;
 }
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  background-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+}
