@@ -482,5 +482,40 @@ img {
 .backdrop {
   position: fixed;
   inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
+}
+
+.backdrop.is-open {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal {
+  position: relative;
+  width: 408px;
+  background-color: #fcfcfc;
+  border-radius: 4px;
+  padding: 24px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: var(--CORNFLOWER, #e7e9fc);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+}
+
+.icon-modal-close {
+  fill: #2e2f42;
 }
