@@ -488,15 +488,15 @@ img {
   background-color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
 }
 
-.backdrop.is-open {
+/* .backdrop.is-open {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-}
+} */
 
 .modal {
   position: relative;
-  width: 408px;
+  max-width: 408px;
   background-color: #fcfcfc;
   border-radius: 4px;
   padding: 24px;
