@@ -504,7 +504,7 @@
               />
             </div>
           </div>
-          <div class="modal-field" for="user-comments">
+          <div class="modal-field">
             <label class="modal-label" for="user-comments">Comments</label>
             <textarea
               class="modal-textarea"
@@ -514,10 +514,23 @@
               placeholder="Text input"
             ></textarea>
           </div>
-          <div class="privacy-policy">
-            <input id="privacy-policy" type="checkbox" name="privacy-policy" />
-            <label for="privacy-policy"
-              >I accept the terms and conditions of the Privacy Policy</label
+          <div class="modal-checkbox">
+            <input
+              class="modal-checkbox-input visually-hidden"
+              id="privacy-policy"
+              type="checkbox"
+              name="privacy-policy"
+            />
+            <span class="checkbox-pic">
+              <svg class="icon-checkbox" width="10" height="8">
+                <use href="./images/checkbox.svg#icon-checkbox"></use>
+              </svg>
+            </span>
+            <label class="modal-checkbox-label" for="privacy-policy"
+              >I accept the terms and conditions of the
+              <a class="privacy-link" href="./privacy.html"
+                >Privacy Policy</a
+              ></label
             >
           </div>
           <button class="button-order" type="submit">Send</button>
