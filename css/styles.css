@@ -541,6 +541,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.64px;
   cursor: pointer;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .footer-subscribe-icon {
@@ -633,7 +634,7 @@ img {
   border-radius: 4px;
   border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.4));
   padding: 11px 16px;
-  transition: border-color 250ms;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .modal-input:focus {
@@ -672,6 +673,7 @@ img {
   font-weight: 400;
   line-height: 1.16;
   letter-spacing: 0.48px;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .modal-textarea:focus {
