@@ -479,6 +479,80 @@ img {
   background-color: #31d0aa;
 }
 
+.email-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+
+.footer-email-label {
+  color: var(--WHITE, #fff);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.32px;
+  margin-bottom: 16px;
+}
+
+.f-box-input-but {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-email-input {
+  width: 264px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--WHITE, #fff);
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  background: var(--NAVY-BLUE, #2e2f42);
+  padding: 8px 16px;
+  /* Small Text */
+  color: var(--WHITE, #fff);
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 2;
+  letter-spacing: 0.48px;
+}
+
+.footer-subscribe {
+  display: inline-flex;
+  max-width: 165px;
+  height: 40px;
+  border: none;
+  margin: 0;
+  padding: 8px 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  background: var(--IRIS, #4d5ae5);
+  /* Text */
+  color: var(--WHITE, #fff);
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  cursor: pointer;
+}
+
+.footer-subscribe-icon {
+  fill: #ffffff;
+  margin-left: 16px;
+}
+
+.footer-subscribe:hover,
+.footer-subscribe:focus {
+  background-color: #404bbf;
+}
+
 .backdrop {
   position: fixed;
   inset: 0;
@@ -489,11 +563,11 @@ img {
   padding: 8px;
 }
 
-/* .backdrop.is-open {
+.backdrop.is-open {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-} */
+}
 
 .modal {
   position: relative;
@@ -524,12 +598,6 @@ img {
 .icon-modal-close {
   fill: #2e2f42;
 }
-
-/* .contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-} */
 
 .contact-form-tittle {
   color: var(--NAVY-BLUE, #2e2f42);
@@ -582,7 +650,7 @@ img {
   transition: fill 250ms;
 }
 
-.modal-input:focus + .modal-input-icon {
+.modal-input:focus + .modal-input-wrap .modal-input-icon {
   fill: #4d5ae5;
 }
 
@@ -648,5 +716,6 @@ img {
   fill: #fcfcfc;
 }
 
-.modal-checkbox-input:checked + .modal-checkbox-label {
+.modal-checkbox-input:checked + .checkbox-pic {
+  background-color: #404bbf;
 }
