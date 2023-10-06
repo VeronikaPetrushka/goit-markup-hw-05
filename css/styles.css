@@ -520,6 +520,10 @@ img {
   letter-spacing: 0.48px;
 }
 
+.footer-email-input:focus {
+  outline: none;
+}
+
 .footer-subscribe {
   display: inline-flex;
   max-width: 165px;
