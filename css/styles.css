@@ -598,10 +598,22 @@ img {
   border-radius: 50%;
   width: 24px;
   height: 24px;
+  transition: background-color cubic-bezier(0.4, 0, 0.2, 1) 250ms;
 }
 
 .icon-modal-close {
   fill: #2e2f42;
+  transition: fill cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+
+.modal-close:hover,
+.modal-close:focus {
+  background-color: #4d5ae5;
+}
+
+.modal-close:hover > .icon-modal-close,
+.modal-close:focus > .icon-modal-close {
+  fill: #fff;
 }
 
 .contact-form-tittle {
@@ -655,7 +667,7 @@ img {
   transition: fill 250ms;
 }
 
-.modal-input:focus + .modal-input-wrap .modal-input-icon {
+.modal-input:focus + .modal-input-icon {
   fill: #4d5ae5;
 }
 
